@@ -1,1 +1,1 @@
-# Proyecto
+# Se encuntran creadas las entidades para el proyecto TorneoFutbolDepartamental. Se encuentra el código para las relaciones de herencia y composición, específicamente para composición el código se encuentra en las entidades Partido, Equipo y Estadio. Al compilar el prográma en visual estudio el programa arroja 7 errores que corresponden a las lineas de código con los comandos "List<entidad> _entidad" en todas las entidades.
