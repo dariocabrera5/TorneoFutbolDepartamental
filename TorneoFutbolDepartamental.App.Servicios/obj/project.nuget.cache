@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wWpvySIuKYX7vhwj07smd9IexfuZz9TedGKsaB5ysL3XNOYonFkaCz7qmYAb5DVISCJL7p6KXvAlRYJBK/tKRw==",
+  "success": true,
+  "projectFilePath": "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Servicios\\TorneoFutbolDepartamental.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

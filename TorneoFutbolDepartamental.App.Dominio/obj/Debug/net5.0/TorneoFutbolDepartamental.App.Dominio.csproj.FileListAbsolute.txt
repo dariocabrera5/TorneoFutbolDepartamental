@@ -1,0 +1,5 @@
+G:\Mi unidad\Misión TIC\Ciclo 3\Proyectos\TorneoFutbolDepartamental.App\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.csproj.AssemblyReference.cache
+G:\Mi unidad\Misión TIC\Ciclo 3\Proyectos\TorneoFutbolDepartamental.App\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+G:\Mi unidad\Misión TIC\Ciclo 3\Proyectos\TorneoFutbolDepartamental.App\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.AssemblyInfoInputs.cache
+G:\Mi unidad\Misión TIC\Ciclo 3\Proyectos\TorneoFutbolDepartamental.App\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.AssemblyInfo.cs
+G:\Mi unidad\Misión TIC\Ciclo 3\Proyectos\TorneoFutbolDepartamental.App\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.csproj.CoreCompileInputs.cache
