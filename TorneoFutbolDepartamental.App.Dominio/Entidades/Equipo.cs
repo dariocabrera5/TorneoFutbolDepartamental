@@ -3,15 +3,15 @@ namespace TorneoFutbolDepartamental.App.Dominio
 {  
     public abstract class Equipo
     {
-        private List<Jugador> _jugador;
-        private List<DirectorTecnico> _director;
-        private List<Municipio> _municipio;
+        private Jugador _jugador;
+        private DirectorTecnico _director;
+        private Municipio _municipio;
 
         public Equipo(int Id, string Nombre, string Municipio, string DirectorTecnico, string Jugador, int CntPartidosJugados, int CntPartidosGanados, int CntPartidosEmpatados, int GolesFavor, int GolesContra, int Puntos)
         {
-            _jugador = new List<Jugador>();
-            _director = new List<DirectorTecnico>();
-            _municipio = new List<Municipio>();
+            _jugador = new Jugador();
+            _director = new DirectorTecnico();
+            _municipio = new Municipio();
         }
 
         public void AgregarJugador(int Id, int Numero, string Posicion, string Equipo)

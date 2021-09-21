@@ -3,15 +3,15 @@ namespace TorneoFutbolDepartamental.App.Dominio
 {  
     public abstract class Partido
     {
-        private List<Arbitro> _arbitro;
-        private List<Equipo> _equipo;
-        private List<Estadio> _estadio;
+        private Arbitro _arbitro;
+        private Equipo _equipo;
+        private Estadio _estadio;
 
         public Partido(int id, string FechaHora, int marcador, string esquipo, string estadio, string arbitro)
         {
-            _arbitro = new List<Arbitro>();
-            _equipo = new List<Equipo>();
-            _Estadio = new List<Estadio>();
+            _arbitro = new Arbitro();
+            _equipo = new Equipo();
+            _Estadio = new Estadio();
         }
 
         public void AgregarArbitro(int Id, string ColegioPertenece)

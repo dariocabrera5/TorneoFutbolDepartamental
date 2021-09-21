@@ -3,11 +3,11 @@ namespace TorneoFutbolDepartamental.App.Dominio
 {  
     public abstract class Estadio
     {
-        private List<Municipio> _municipio;
+        private Municipio _municipio;
 
         public Estadio(int Id, string Nombre, string Direccion, string Ciudad, string Municipio)
         {
-            _municipio = new List<Municipio>();
+            _municipio = new Municipio();
         }
         
         public void AgregarMunicipio(int Id, string Nombre)
