@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Aa2TbGUtn/V7kxWbtp0+xN+3iJkZjmmyvEURSnO5vW6/H3rr7A5O/2XZ442LlFXtFwfLwqo/GreAGMSJ+KZ1ng==",
+  "dgSpecHash": "NanahOG1oeOabsEsNoKg32C5qOJyNoCrt2WSNGmv88V+TAAmMDX3OrlbGbAqBOA2CTHLqBEI6hMY0bf39wKz1g==",
   "success": true,
-  "projectFilePath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Persistencia\\TorneoFutbolDepartamental.App.Persistencia.csproj",
+  "projectFilePath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\TorneoFutbolDepartamental.App.Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -14,7 +14,6 @@
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
-    "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

@@ -11,7 +11,7 @@ namespace TorneoFutbolDepartamental.App.Dominio
         {
             _arbitro = new Arbitro();
             _equipo = new Equipo();
-            _Estadio = new Estadio();
+            _estadio = new Estadio();
         }
 
         public void AgregarArbitro(int Id, string ColegioPertenece)

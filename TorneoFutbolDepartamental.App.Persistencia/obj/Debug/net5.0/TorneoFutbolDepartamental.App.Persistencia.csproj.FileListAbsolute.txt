@@ -1,0 +1,15 @@
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.deps.json
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.runtimeconfig.json
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.runtimeconfig.dev.json
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.dll
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Persistencia.dll
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.pdb
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.csproj.AssemblyReference.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.AssemblyInfoInputs.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.AssemblyInfo.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.dll
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Persistencia.dll
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.pdb
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.genruntimeconfig.cache

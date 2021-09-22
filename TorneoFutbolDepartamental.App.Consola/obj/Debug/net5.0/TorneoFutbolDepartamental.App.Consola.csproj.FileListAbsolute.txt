@@ -1,0 +1,5 @@
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.csproj.AssemblyReference.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.AssemblyInfoInputs.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.AssemblyInfo.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.csproj.CoreCompileInputs.cache
