@@ -18,7 +18,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         {
             if(!optionBuilder.IsConfigured){
                 optionBuilder
-                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = TorneoFutbolDepartamentalData");
+                .UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = TorneoFutbolData2");
             }
         }
     }
