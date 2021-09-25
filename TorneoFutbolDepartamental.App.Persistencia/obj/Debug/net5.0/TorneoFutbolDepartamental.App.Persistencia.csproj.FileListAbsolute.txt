@@ -13,3 +13,6 @@ C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persis
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Persistencia.dll
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.pdb
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.genruntimeconfig.cache
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.dll
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.pdb
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Persistencia\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Persistencia.csproj.CopyComplete
