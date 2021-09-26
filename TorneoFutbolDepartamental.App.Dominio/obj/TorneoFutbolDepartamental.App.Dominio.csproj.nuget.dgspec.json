@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj": {}
+    "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj": {}
   },
   "projects": {
-    "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj": {
+    "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj",
+        "projectUniqueName": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj",
         "projectName": "TorneoFutbolDepartamental.App.Dominio",
-        "projectPath": "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\User.DESKTOP-0P9IRHM\\.nuget\\packages\\",
-        "outputPath": "G:\\Mi unidad\\Misión TIC\\Ciclo 3\\Proyectos\\TorneoFutbolDepartamental.App\\TorneoFutbolDepartamental.App.Dominio\\obj\\",
+        "projectPath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\",
+        "outputPath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User.DESKTOP-0P9IRHM\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\KATERINE CABRERA\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
