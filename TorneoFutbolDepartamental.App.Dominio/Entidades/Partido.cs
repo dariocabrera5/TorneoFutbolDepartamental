@@ -3,7 +3,7 @@ namespace TorneoFutbolDepartamental.App.Dominio
 {  
     public class Partido
     {
-        public int PartidoId {get;set;}
+        public int Id {get;set;}
         public string FechaHora {get;set;}
         public int marcador {get;set;}
         public Arbitro Arbitro {get;set;}

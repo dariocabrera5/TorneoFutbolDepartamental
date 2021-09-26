@@ -3,7 +3,7 @@ namespace TorneoFutbolDepartamental.App.Dominio
 {  
     public class Equipo
     {
-        public int EquipoId {get;set;}
+        public int Id {get;set;}
         public string Nombre {get;set;}
         public int cntPartidosEmpatados {get;set;}
         public int cntPartidosGanados {get;set;}
