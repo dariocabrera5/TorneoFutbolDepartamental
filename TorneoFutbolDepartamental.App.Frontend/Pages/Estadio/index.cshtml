@@ -1,0 +1,28 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Estadio.indexModel
+@{
+    <h1>Listado de estadios</h1>
+}
+<a class="btn btn-primary" asp-page="./Create">Crear paciente</a>
+<h1>Listado de estadios</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Municipio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estadio in Model.estadios)
+        {
+            <tr>
+                <td>@estadio.Nombre</td>
+                <td>@estadio.Direccion</td>
+                <td>@estadio.Municipio</td>
+                <td><a class="btn btn-secondary" asp-page="./Details" asp-route-id="@estadio.Id">Detalle</a></td>
+            </tr>
+            
+        }
+    </tbody>
+</table

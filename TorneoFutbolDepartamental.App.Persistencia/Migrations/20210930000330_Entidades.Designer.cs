@@ -10,8 +10,8 @@ using TorneoFutbolDepartamental.App.Persistencia;
 namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210926021039_primeraMigracion")]
-    partial class primeraMigracion
+    [Migration("20210930000330_Entidades")]
+    partial class Entidades
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -27,9 +27,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
-
-                    b.Property<int?>("DirectorTecnicoId")
-                        .HasColumnType("int");
 
                     b.Property<int>("GolesContra")
                         .HasColumnType("int");
@@ -56,8 +53,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DirectorTecnicoId");
 
                     b.HasIndex("municipioId");
 
@@ -124,7 +119,10 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                     b.Property<string>("FechaHora")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("marcador")
+                    b.Property<int>("maracadorEquipoVisitante")
+                        .HasColumnType("int");
+
+                    b.Property<int>("marcadorEquipoLocal")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -181,8 +179,12 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                 {
                     b.HasBaseType("TorneoFutbolDepartamental.App.Dominio.Persona");
 
-                    b.Property<string>("Equipo")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("EquipoForeignKey")
+                        .HasColumnType("int");
+
+                    b.HasIndex("EquipoForeignKey")
+                        .IsUnique()
+                        .HasFilter("[EquipoForeignKey] IS NOT NULL");
 
                     b.HasDiscriminator().HasValue("DirectorTecnico");
                 });
@@ -207,15 +209,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
 
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Equipo", b =>
                 {
-                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.DirectorTecnico", "DirectorTecnico")
-                        .WithMany()
-                        .HasForeignKey("DirectorTecnicoId");
-
                     b.HasOne("TorneoFutbolDepartamental.App.Dominio.Municipio", "municipio")
                         .WithMany()
                         .HasForeignKey("municipioId");
-
-                    b.Navigation("DirectorTecnico");
 
                     b.Navigation("municipio");
                 });
@@ -256,6 +252,17 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                     b.Navigation("Estadio");
                 });
 
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.DirectorTecnico", b =>
+                {
+                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.Equipo", "Equipo")
+                        .WithOne("DirectorTecnico")
+                        .HasForeignKey("TorneoFutbolDepartamental.App.Dominio.DirectorTecnico", "EquipoForeignKey")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Equipo");
+                });
+
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Jugador", b =>
                 {
                     b.HasOne("TorneoFutbolDepartamental.App.Dominio.Equipo", "Equipo")
@@ -263,6 +270,11 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                         .HasForeignKey("EquipoId");
 
                     b.Navigation("Equipo");
+                });
+
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Equipo", b =>
+                {
+                    b.Navigation("DirectorTecnico");
                 });
 #pragma warning restore 612, 618
         }

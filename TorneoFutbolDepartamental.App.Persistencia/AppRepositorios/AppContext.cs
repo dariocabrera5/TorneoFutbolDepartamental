@@ -13,7 +13,13 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         public DbSet<Municipio> Municipios {get;set;}
         public DbSet<Partido> Partidos {get;set;}
         public DbSet<DirectorTecnico> Tecnicos  {get;set;}
-
+ protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Equipo>()
+            .HasOne(p => p.DirectorTecnico)
+            .WithOne(i => i.Equipo)
+            .HasForeignKey<DirectorTecnico>(b => b.EquipoForeignKey);
+    }
         protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
         {
             if(!optionBuilder.IsConfigured){

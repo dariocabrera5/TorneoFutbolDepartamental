@@ -5,7 +5,8 @@ namespace TorneoFutbolDepartamental.App.Dominio
     {
         public int Id {get;set;}
         public string FechaHora {get;set;}
-        public int marcador {get;set;}
+        public int marcadorEquipoLocal {get;set;}
+        public int maracadorEquipoVisitante {get;set;}
         public Arbitro Arbitro {get;set;}
         public Equipo EquipoLocal {get;set;}
         public Equipo EquipoVisitante {get;set;}
