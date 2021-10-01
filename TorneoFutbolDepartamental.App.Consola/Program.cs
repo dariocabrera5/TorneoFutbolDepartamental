@@ -18,7 +18,7 @@ namespace TorneoFutbolDepartamental.App.Consola
             Console.WriteLine("Hello World!");
             //AddArbitro();
             //AddDirectorTecnico();
-            //AddMunicipio();
+            AddMunicipio();
             //AddEquipo();
             //AddJugador();
             AddEstadio();

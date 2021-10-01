@@ -4,22 +4,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TorneoFutbolDepartamental.App.Persistencia;
 using TorneoFutbolDepartamental.App.Dominio;
+using TorneoFutbolDepartamental.App.Persistencia;
 
-namespace TorneoFutbolDepartamental.App.Frontend.Pages.Estadio
+namespace TorneoFutbolDepartamental.App.Frontend.Pages.Estadios
 {
     public class indexModel : PageModel
     {
         private readonly IRepositorioEstadio _repoEstadio;
-        public IEnumerable<Estadio> Estadiose {get;set;}
+        public IEnumerable<Estadio> estadios {get;set;}
         public indexModel(IRepositorioEstadio repoEstadio){
             _repoEstadio = repoEstadio;
 
         }
         public void OnGet()
         {
-            Estadiose = _repoEstadio.GetAllEstadios();
+            estadios = _repoEstadio.GetAllEstadios();
         }
     }
 }
