@@ -5795,19 +5795,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\TorneoFutbolDepartamental.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\TorneoFutbolDepartamental.App.Consola.csproj",
       "projectName": "TorneoFutbolDepartamental.App.Consola",
-      "projectPath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\TorneoFutbolDepartamental.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\",
-      "outputPath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\TorneoFutbolDepartamental.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KATERINE CABRERA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -5819,8 +5819,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Persistencia\\TorneoFutbolDepartamental.App.Persistencia.csproj": {
-              "projectPath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Persistencia\\TorneoFutbolDepartamental.App.Persistencia.csproj"
+            "C:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Persistencia\\TorneoFutbolDepartamental.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Persistencia\\TorneoFutbolDepartamental.App.Persistencia.csproj"
             }
           }
         }
