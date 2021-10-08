@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public interface IRepositorioEquipo
     {
@@ -11,8 +11,8 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
 
          Equipo ActualizarEquipo(Equipo equipo);
 
-         void BorrarEquipo(int idEquipo);
+         void BorrarEquipo(int Equipoid);
 
-         Equipo ObtenerEquipo(int idEquipo);
+         Equipo ObtenerEquipo(int Equipoid);
     }
 }

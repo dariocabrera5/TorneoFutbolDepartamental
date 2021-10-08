@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public class RepositorioDirectorTecnico : IRepositorioDirectorTecnico
     {
@@ -21,9 +21,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return DirectorTecnicoAñadido.Entity;
         }
         
-        void IRepositorioDirectorTecnico.BorrarDirectorTecnico (int idDirectorTecnico)
+        void IRepositorioDirectorTecnico.BorrarDirectorTecnico (int DirectorTecnicoid)
         {
-            var DirectorTecnicoEncontrado = _appContext.DirectorTecnico.FirstOrDefault(dt => dt.DirectorTecnicoId == idDirectorTecnico);
+            var DirectorTecnicoEncontrado = _appContext.DirectorTecnico.FirstOrDefault(dt => dt.DirectorTecnicoId == DirectorTecnicoid);
             if (DirectorTecnicoEncontrado == null)
                 return;
             _appContext.DirectorTecnico.Remove(DirectorTecnicoEncontrado);
@@ -36,9 +36,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return _appContext.DirectoresTecnicos;
         }
 
-        DirectorTecnico IRepositorioDirectorTecnico.ObtenerDirectorTecnico (int idDirectorTecnico)
+        DirectorTecnico IRepositorioDirectorTecnico.ObtenerDirectorTecnico (int DirectorTecnicoid)
         {
-            return _appContext.DirectoresTecnicos.FirstOrDefault(dt => dt.DirectorTecnicoId == idDirectorTecnico);
+            return _appContext.DirectoresTecnicos.FirstOrDefault(dt => dt.DirectorTecnicoId == DirectorTecnicoid);
         }
 
         DirectorTecnico IRepositorioDirectorTecnico.ActualizarDirectorTecnico (DirectorTecnico directorTecnico)

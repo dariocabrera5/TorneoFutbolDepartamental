@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public class RepositorioArbitro : IRepositorioArbitro
     {
@@ -21,9 +21,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return ArbitroAñadido.Entity;
         }
         
-        void IRepositorioArbitro.BorrarArbitro (int idArbitro)
+        void IRepositorioArbitro.BorrarArbitro (int Arbitroid)
         {
-            var ArbitroEncontrado = _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == idArbitro);
+            var ArbitroEncontrado = _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == Arbitroid);
             if (ArbitroEncontrado == null)
                 return;
             _appContext.Arbitros.Remove(ArbitroEncontrado);
@@ -36,9 +36,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return _appContext.Arbitros;
         }
 
-        Arbitro IRepositorioArbitro.ObtenerArbitro (int idArbitro)
+        Arbitro IRepositorioArbitro.ObtenerArbitro (int Arbitroid)
         {
-            return _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == idArbitro);
+            return _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == Arbitroid);
         }
 
         Arbitro IRepositorioArbitro.ActualizarArbitro (Arbitro arbitro)

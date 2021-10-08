@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
-    public class IRepositorioArbitro
+    public interface IRepositorioArbitro
     {
 
          IEnumerable<Arbitro> ObtenerArbitros();
@@ -12,9 +12,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
 
          Arbitro ActualizarArbitro(Arbitro arbitro);
 
-         void BorrarArbitro(int idArbitro);
+         void BorrarArbitro(int Arbitroid);
 
-         Arbitro ObtenerArbitro(int idArbitro);
+         Arbitro ObtenerArbitro(int Arbitroid);
 
     }
 }

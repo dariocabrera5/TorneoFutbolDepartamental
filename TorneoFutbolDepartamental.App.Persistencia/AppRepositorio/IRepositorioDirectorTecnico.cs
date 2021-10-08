@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public interface IRepositorioDirectorTecnico
     {
@@ -12,9 +12,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
 
          DirectorTecnico ActualizarDirectorTecnico(DirectorTecnico directorTecnico);
 
-         void BorrarDirectorTecnico(int idDirectorTecnico);
+         void BorrarDirectorTecnico(int DirectorTecnicoid);
 
-         DirectorTecnico ObtenerDirectorTecnico(int idDirectorTecnico);
+         DirectorTecnico ObtenerDirectorTecnico(int DirectorTecnicoid);
 
     }
 }

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
-using TorneoFutbol.App.Dominio;
+using TorneoFutbolDepartamental.App.Dominio;
 
-namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
+namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public class RepositorioEquipo : IRepositorioEquipo
     {
@@ -21,9 +21,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return EquipoAñadido.Entity;
         }
         
-        void IRepositorioEquipo.BorrarEquipo (int idEquipo)
+        void IRepositorioEquipo.BorrarEquipo (int Equipoid)
         {
-            var EquipoEncontrado = _appContext.Equipo.FirstOrDefault(e => e.EquipoId == idEquipo);
+            var EquipoEncontrado = _appContext.Equipo.FirstOrDefault(e => e.EquipoId == Equipoid);
             if (EquipoEncontrado == null)
                 return;
             _appContext.Equipo.Remove(EquipoEncontrado);
@@ -36,9 +36,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia.AppRepositorio
             return _appContext.Equipos;
         }
 
-        Equipos IRepositorioEquipo.ObtenerEquipo (int idEquipo)
+        Equipo IRepositorioEquipo.ObtenerEquipo (int Equipoid)
         {
-            return _appContext.Equipos.FirstOrDefault(e => e.EquipoId == idEquipo);
+            return _appContext.Equipos.FirstOrDefault(e => e.EquipoId == Equipoid);
         }
 
         Equipo IRepositorioEquipo.ActualizarEquipo (Equipo equipo)
