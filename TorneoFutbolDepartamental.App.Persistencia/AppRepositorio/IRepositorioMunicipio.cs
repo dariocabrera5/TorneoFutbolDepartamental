@@ -5,14 +5,14 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public interface IRepositorioMunicipio
     {
-        IEnumerable<Municipio> ObtenerMunicipios();
+        IEnumerable<Municipio> GetAllMunicipios();
 
-        Municipio AñadirMunicipio(Municipio municipio);
+        Municipio AddMunicipio(Municipio municipio);
 
-        Municipio ActualizarMunicipio(Municipio municipio);
+        Municipio UpdateMunicipio(Municipio municipio);
 
-        void BorrarMunicipio(int Municipioid);
+        void DeleteMunicipio(int Municipioid);
 
-        Municipio ObtenerMunicipio(int Municipioid);
+        Municipio GetMunicipio(int Municipioid);
     }
 }

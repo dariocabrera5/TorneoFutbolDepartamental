@@ -5,14 +5,14 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public interface IRepositorioEstadio
     {
-        IEnumerable<Estadio> ObtenerEstadios();
+        IEnumerable<Estadio> GetAllEstadios();
 
-        Estadio AñadirEstadio(Estadio estadio);
+        Estadio AddEstadio(Estadio estadio);
 
-        Estadio ActualizarEstadio(Estadio estadio);
+        Estadio UpdateEstadio(Estadio estadio);
 
-        void BorrarEstadio(int Estadioid);
+        void DeleteEstadio(int Estadioid);
 
-        Estadio ObtenerEstadio(int Estadioid);
+        Estadio GetEstadio(int Estadioid);
     }
 }

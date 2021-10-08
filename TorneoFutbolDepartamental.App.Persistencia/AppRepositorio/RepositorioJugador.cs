@@ -9,19 +9,23 @@ namespace TorneoFutbolDepartamental.App.Persistencia
     {
          private readonly AppContext _appContext = new AppContext();
 
+        public RepositorioJugador()
+        {
+        }
+
         public RepositorioJugador (AppContext appContext)
         {
             _appContext=appContext;
         }
 
-        Jugador IRepositorioJugador.AñadirJugador (Jugador jugador)
+        Jugador IRepositorioJugador.AddJugador (Jugador jugador)
         {
             var JugadorAñadido = _appContext.Jugadores.Add(jugador);
             _appContext.SaveChanges();
             return JugadorAñadido.Entity;
         }
         
-        void IRepositorioJugador.BorrarJugador (int Jugadorid)
+        void IRepositorioJugador.DeleteJugador (int Jugadorid)
         {
             var JugadorEncontrado= _appContext.Jugadores.FirstOrDefault(j => j.JugadorId == Jugadorid);
             if (JugadorEncontrado == null)
@@ -31,17 +35,17 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
         }
 
-        IEnumerable<Jugador> IRepositorioJugador.ObtenerJugadores ()
+        IEnumerable<Jugador> IRepositorioJugador.GetAllJugadores ()
         {
             return _appContext.Jugadores;
         }
 
-        Jugador IRepositorioJugador.ObtenerJugador (int Jugadorid)
+        Jugador IRepositorioJugador.GetJugador (int Jugadorid)
         {
             return _appContext.Jugadores.FirstOrDefault(j => j.JugadorId == Jugadorid);
         }
 
-        Jugador IRepositorioJugador.ActualizarJugador (Jugador jugador)
+        Jugador IRepositorioJugador.UpdateJugador (Jugador jugador)
         {
             var JugadorEncontrado = _appContext.Jugadores.FirstOrDefault(j => j.JugadorId == jugador.JugadorId);
             if (JugadorEncontrado != null)

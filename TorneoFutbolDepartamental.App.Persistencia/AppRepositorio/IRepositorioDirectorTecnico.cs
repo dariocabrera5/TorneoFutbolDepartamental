@@ -6,15 +6,15 @@ namespace TorneoFutbolDepartamental.App.Persistencia
     public interface IRepositorioDirectorTecnico
     {
          
-         IEnumerable<DirectorTecnico> ObtenerDirectoresTecnicos();
+         IEnumerable<DirectorTecnico> GetAllDirectoresTecnicos();
 
-         DirectorTecnico AñadirDirectorTecnico(DirectorTecnico directorTecnico);
+         DirectorTecnico AddDirectorTecnico(DirectorTecnico directorTecnico);
 
-         DirectorTecnico ActualizarDirectorTecnico(DirectorTecnico directorTecnico);
+         DirectorTecnico UpdateDirectorTecnico(DirectorTecnico directorTecnico);
 
-         void BorrarDirectorTecnico(int DirectorTecnicoid);
+         void DeleteDirectorTecnico(int DirectorTecnicoid);
 
-         DirectorTecnico ObtenerDirectorTecnico(int DirectorTecnicoid);
+         DirectorTecnico GetDirectorTecnico(int DirectorTecnicoid);
 
     }
 }

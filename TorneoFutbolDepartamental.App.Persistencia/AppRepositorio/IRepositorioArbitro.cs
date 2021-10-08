@@ -6,15 +6,15 @@ namespace TorneoFutbolDepartamental.App.Persistencia
     public interface IRepositorioArbitro
     {
 
-         IEnumerable<Arbitro> ObtenerArbitros();
+         IEnumerable<Arbitro> GetAllArbitros();
 
-         Arbitro AñadirArbitro(Arbitro arbitro);
+         Arbitro AddArbitro(Arbitro arbitro);
 
-         Arbitro ActualizarArbitro(Arbitro arbitro);
+         Arbitro UpdateArbitro(Arbitro arbitro);
 
-         void BorrarArbitro(int Arbitroid);
+         void DeleteArbitro(int Arbitroid);
 
-         Arbitro ObtenerArbitro(int Arbitroid);
+         Arbitro GetArbitro(int Arbitroid);
 
     }
 }

@@ -9,41 +9,45 @@ namespace TorneoFutbolDepartamental.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
+        public RepositorioEquipo()
+        {
+        }
+
         public RepositorioEquipo (AppContext appContext)
         {
             _appContext=appContext;
         }
 
-        Equipo IRepositorioEquipo.AñadirEquipo (Equipo equipo)
+        Equipo IRepositorioEquipo.AddEquipo (Equipo equipo)
         {
             var EquipoAñadido = _appContext.Equipos.Add(equipo);
             _appContext.SaveChanges();
             return EquipoAñadido.Entity;
         }
         
-        void IRepositorioEquipo.BorrarEquipo (int Equipoid)
+        void IRepositorioEquipo.DeleteEquipo (int Equipoid)
         {
-            var EquipoEncontrado = _appContext.Equipo.FirstOrDefault(e => e.EquipoId == Equipoid);
+            var EquipoEncontrado = _appContext.Equipos.FirstOrDefault(e => e.EquipoId == Equipoid);
             if (EquipoEncontrado == null)
                 return;
-            _appContext.Equipo.Remove(EquipoEncontrado);
+            _appContext.Equipos.Remove(EquipoEncontrado);
             _appContext.SaveChanges();
 
         }
 
-        IEnumerable<Equipo> IRepositorioEquipo.ObtenerEquipos ()
+        IEnumerable<Equipo> IRepositorioEquipo.GetAllEquipos ()
         {
             return _appContext.Equipos;
         }
 
-        Equipo IRepositorioEquipo.ObtenerEquipo (int Equipoid)
+        Equipo IRepositorioEquipo.GetEquipo (int Equipoid)
         {
             return _appContext.Equipos.FirstOrDefault(e => e.EquipoId == Equipoid);
         }
 
-        Equipo IRepositorioEquipo.ActualizarEquipo (Equipo equipo)
+        Equipo IRepositorioEquipo.UpdateEquipo (Equipo equipo)
         {
-            var EquipoEncontrado = _appContext.Equipo.FirstOrDefault(e => e.EquipoId == equipo.EquipoId);
+            var EquipoEncontrado = _appContext.Equipos.FirstOrDefault(e => e.EquipoId == equipo.EquipoId);
             if (EquipoEncontrado != null)
             {
                 EquipoEncontrado.Nombre = equipo.Nombre;

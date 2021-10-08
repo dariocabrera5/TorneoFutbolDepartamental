@@ -5,14 +5,14 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public interface IRepositorioEquipo
     {
-         IEnumerable<Equipo> ObtenerEquipos();
+         IEnumerable<Equipo> GetAllEquipos();
 
-         Equipo AñadirEquipo(Equipo equipo);
+         Equipo AddEquipo(Equipo equipo);
 
-         Equipo ActualizarEquipo(Equipo equipo);
+         Equipo UpdateEquipo(Equipo equipo);
 
-         void BorrarEquipo(int Equipoid);
+         void DeleteEquipo(int Equipoid);
 
-         Equipo ObtenerEquipo(int Equipoid);
+         Equipo GetEquipo(int Equipoid);
     }
 }

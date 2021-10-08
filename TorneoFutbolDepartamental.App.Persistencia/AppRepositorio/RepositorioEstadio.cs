@@ -9,41 +9,45 @@ namespace TorneoFutbolDepartamental.App.Persistencia
     {
         private readonly AppContext _appContext = new AppContext();
 
+        public RepositorioEstadio()
+        {
+        }
+
         public RepositorioEstadio (AppContext appContext)
         {
             _appContext=appContext;
         }
 
-        Estadio IRepositorioEstadio.AñadirEstadio (Estadio estadio)
+        Estadio IRepositorioEstadio.AddEstadio (Estadio estadio)
         {
             var EstadioAñadido = _appContext.Estadios.Add(estadio);
             _appContext.SaveChanges();
             return EstadioAñadido.Entity;
         }
         
-        void IRepositorioEstadio.BorrarEstadio (int idEstadio)
+        void IRepositorioEstadio.DeleteEstadio (int Estadioid)
         {
-            var EstadioEncontrado = _appContext.Estadio.FirstOrDefault(es => es.EstadioId == Estadioid);
+            var EstadioEncontrado = _appContext.Estadios.FirstOrDefault(es => es.EstadioId == Estadioid);
             if (EstadioEncontrado == null)
                 return;
-            _appContext.Estadio.Remove(EstadioEncontrado);
+            _appContext.Estadios.Remove(EstadioEncontrado);
             _appContext.SaveChanges();
 
         }
 
-        IEnumerable<Estadio> IRepositorioEstadio.ObtenerEstadios ()
+        IEnumerable<Estadio> IRepositorioEstadio.GetAllEstadios ()
         {
             return _appContext.Estadios;
         }
 
-        Estadio IRepositorioEstadio.ObtenerEstadio (int Estadioid)
+        Estadio IRepositorioEstadio.GetEstadio (int Estadioid)
         {
             return _appContext.Estadios.FirstOrDefault(es => es.EstadioId == Estadioid);
         }
 
-        Estadio IRepositorioEstadio.ActualizarEstadio (Estadio estadio)
+        Estadio IRepositorioEstadio.UpdateEstadio (Estadio estadio)
         {
-            var EstadioEncontrado = _appContext.Estadio.FirstOrDefault(es=> es.EstadioId == estadio.EstadioId);
+            var EstadioEncontrado = _appContext.Estadios.FirstOrDefault(es=> es.EstadioId == estadio.EstadioId);
             if (EstadioEncontrado != null)
             {
                 EstadioEncontrado.Nombre = estadio.Nombre;
