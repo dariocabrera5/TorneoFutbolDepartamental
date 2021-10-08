@@ -5,6 +5,8 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 {
     public class AppContext : DbContext
     {
+        internal object DirectorTecnico;
+
         public DbSet<Arbitro> Arbitros {get;set;}
         public DbSet<Equipo> Equipos {get;set;}
         public DbSet<Estadio> Estadios {get;set;}
