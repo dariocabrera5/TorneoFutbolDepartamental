@@ -3,3 +3,36 @@
 @{
 }
 <h1>Listado de Equipos</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cnt_PartidosEmpatados</th>
+            <th scope="col">Cnt_PartidosGanados</th>
+            <th scope="col">Cnt_PartidosJugados</th>
+            <th scope="col">GolesContra</th>
+            <th scope="col">GolesFavor</th>
+            <th scope="col">Puntos</th>
+            <th scope="col">Jugador</th>
+            <th scope="col">DirectorTecnico</th>
+            <th scope="col">Municipio</th>
+        </tr>   
+    </thead>
+    <tbody>
+        @foreach (var equipo in Model.equipos)
+        {
+            <tr>
+                <td>@equipo.Nombre</td>
+                <td>@equipo.Cnt_PartidosEmpatados</td>
+                <td>@equipo.Cnt_PartidosGanados</td>
+                <td>@equipo.Cnt_PartidosJugados</td>
+                <td>@equipo.GolesContra</td>
+                <td>@equipo.GolesFavor</td>
+                <td>@equipo.Puntos</td>
+                <td>@equipo.Jugador</td>
+                <td>@equipo.DirectorTecnico</td>
+                <td>@equipo.Municipio</td>
+            </tr>
+        }
+    </tbody>
+</table>

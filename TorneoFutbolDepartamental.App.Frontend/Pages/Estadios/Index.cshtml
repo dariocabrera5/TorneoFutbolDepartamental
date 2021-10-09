@@ -3,3 +3,24 @@
 @{
 }
 <h1>Listado de Estadios</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Ciudad</th>
+            <th scope="col">Municipio</th>
+        </tr>   
+    </thead>
+    <tbody>
+        @foreach (var estadio in Model.estadios)
+        {
+            <tr>
+                <td>@estadio.Nombre</td>
+                <td>@estadio.Direccion</td>
+                <td>@estadio.Ciudad</td>
+                <td>@estadio.Municipio</td>
+            </tr>
+        }
+    </tbody>
+</table>
