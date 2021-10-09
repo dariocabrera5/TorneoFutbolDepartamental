@@ -19,20 +19,20 @@ namespace TorneoFutbolDepartamental.App.Consola
         {
             Console.WriteLine("Hello World!");
             CrearArbitro();
-            CrearDirectorTecnico();
-            CrearEquipo();
-            CrearEstadio();
-            CrearJugador();
-            CrearMunicipio();
-            CrearPartido();
+            //CrearDirectorTecnico();
+            //CrearEquipo();
+            //CrearEstadio();
+            //CrearJugador();
+            //CrearMunicipio();
+            //CrearPartido();
         }
 
         private static void CrearArbitro(){
             var arbitro =new Arbitro{
-                Nombre = "Alberto",
-                Documento = "105487795",
-                Telefono = "319562142",
-                ColegioPertenece = "Arbit"
+                Nombre = "Jose",
+                Documento = "1224898795",
+                Telefono = "312246832",
+                ColegioPertenece = "Liga Nacional"
             };
             _repoArbitro.AddArbitro(arbitro);
         }
