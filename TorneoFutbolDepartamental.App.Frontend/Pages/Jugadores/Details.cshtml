@@ -2,3 +2,31 @@
 @model TorneoFutbolDepartamental.App.Frontend.pages.Jugadores.DetailsModel
 @{
 }
+<h1>Detalles Del Jugador</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.jugador.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Documento</th>
+        <td>@Model.jugador.Documento</td>
+    </tr>
+    <tr>
+        <th scope="col">Telefono</th>
+        <td>@Model.jugador.Telefono</td>
+    </tr>
+    <tr>
+        <th scope="col">Numero</th>
+        <td>@Model.jugador.Numero</td>
+    </tr>
+    <tr>
+        <th scope="col">Posicion</th>
+        <td>@Model.jugador.Posicion</td>
+    </tr>
+    <tr>
+        <th scope="col">Equipo</th>
+        <td>@Model.jugador.Equipo</td>
+    </tr>                     
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

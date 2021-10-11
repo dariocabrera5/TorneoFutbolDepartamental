@@ -10,6 +10,7 @@
             <th scope="col">Documento</th>
             <th scope="col">Telefono</th>
             <th scope="col">Equipo</th>
+            <th scope="col">Acciones</th>
         </tr>   
     </thead>
     <tbody>
@@ -20,6 +21,7 @@
                 <td>@directorTecnico.Documento</td>
                 <td>@directorTecnico.Telefono</td>
                 <td>@directorTecnico.Equipo</td>
+                <td><a class="btn btn-primary" asp-page="./Details" asp-route-DirectorTecnicoid="@directorTecnico.DirectorTecnicoId">Detalles</a></td>
             </tr>
         }
     </tbody>

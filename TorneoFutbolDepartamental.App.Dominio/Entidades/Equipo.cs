@@ -23,7 +23,6 @@ namespace TorneoFutbolDepartamental.App.Dominio
 
         public DirectorTecnico DirectorTecnico {get;set;}
 
-        public Municipio Municipio {get;set;}  
-
+        public Municipio Municipio {get;set;}
     }
 }

@@ -24,7 +24,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             _appContext.SaveChanges();
             return ArbitroAñadido.Entity;
         }
-        
         void IRepositorioArbitro.DeleteArbitro (int Arbitroid)
         {
             var ArbitroEncontrado = _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == Arbitroid);
@@ -32,7 +31,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 return;
             _appContext.Arbitros.Remove(ArbitroEncontrado);
             _appContext.SaveChanges();
-
         }
 
         IEnumerable<Arbitro> IRepositorioArbitro.GetAllArbitros ()
@@ -56,7 +54,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 ArbitroEncontrado.ColegioPertenece = arbitro.ColegioPertenece;
 
                 _appContext.SaveChanges();
-                
             }
             return ArbitroEncontrado;
         }

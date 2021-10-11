@@ -53,7 +53,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 DirectorTecnicoEncontrado.Equipo = directorTecnico.Equipo;
 
                 _appContext.SaveChanges();
-                
             }
             return DirectorTecnicoEncontrado;
         }

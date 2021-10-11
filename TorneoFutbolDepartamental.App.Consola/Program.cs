@@ -18,13 +18,15 @@ namespace TorneoFutbolDepartamental.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            CrearArbitro();
+            ObtenerArbitros();
             //CrearDirectorTecnico();
             //CrearEquipo();
             //CrearEstadio();
             //CrearJugador();
             //CrearMunicipio();
             //CrearPartido();
+            //BorrarMunicipio();
+            //CrearArbitro();
         }
 
         private static void CrearArbitro(){
@@ -95,6 +97,14 @@ namespace TorneoFutbolDepartamental.App.Consola
                 Marcador = 0
             };
             _repoPartido.AddPartido(partido);
+        }
+
+        private static void BorrarMunicipio(){
+            _repoMunicipio.DeleteMunicipio(1);
+        }
+
+        private static void ObtenerArbitros(){
+            _repoArbitro.GetAllArbitros();
         }
 
     }

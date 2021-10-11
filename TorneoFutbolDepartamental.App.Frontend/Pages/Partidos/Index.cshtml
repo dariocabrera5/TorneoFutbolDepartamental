@@ -12,6 +12,7 @@
             <th scope="col">EquipoLocal</th>
             <th scope="col">EquipoVisitante</th>
             <th scope="col">Estadio</th>
+            <th scope="col">Acciones</th>
         </tr>   
     </thead>
     <tbody>
@@ -24,6 +25,7 @@
                 <td>@partido.EquipoLocal</td>
                 <td>@partido.EquipoVisitante</td>
                 <td>@partido.Estadio</td>
+                <td><a class="btn btn-primary" asp-page="./Details" asp-route-Partidoid="@partido.PartidoId">Detalles</a></td>
             </tr>
         }
     </tbody>

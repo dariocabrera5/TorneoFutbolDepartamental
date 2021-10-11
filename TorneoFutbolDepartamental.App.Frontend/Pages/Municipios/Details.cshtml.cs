@@ -4,13 +4,30 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using TorneoFutbolDepartamental.App.Dominio;
+using TorneoFutbolDepartamental.App.Persistencia;
 
 namespace TorneoFutbolDepartamental.App.Frontend.pages.Municipios
 {
     public class DetailsModel : PageModel
     {
-        public void OnGet()
+        private readonly IRepositorioMunicipio _repoMunicipio;
+        public Municipio municipio {get;set;}
+        public DetailsModel(IRepositorioMunicipio repoMunicipio)
         {
+            _repoMunicipio = repoMunicipio;
+        }
+        public IActionResult OnGet(int Municipioid)
+        {
+            municipio = _repoMunicipio.GetMunicipio(Municipioid);
+            if(municipio == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }

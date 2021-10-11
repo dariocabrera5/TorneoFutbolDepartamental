@@ -12,6 +12,7 @@
             <th scope="col">Numero</th>
             <th scope="col">Posicion</th>
             <th scope="col">Equipo</th>
+            <th scope="col">Acciones</th>
         </tr>   
     </thead>
     <tbody>
@@ -24,6 +25,7 @@
                 <td>@jugador.Numero</td>
                 <td>@jugador.Posicion</td>
                 <td>@jugador.Equipo</td>
+                <td><a class="btn btn-primary" asp-page="./Details" asp-route-Jugadorid="@jugador.JugadorId">Detalles</a></td>
             </tr>
         }
     </tbody>

@@ -2,3 +2,31 @@
 @model TorneoFutbolDepartamental.App.Frontend.pages.Partidos.DetailsModel
 @{
 }
+<h1>Detalles Del Partido</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">FechaHora</th>
+        <td>@Model.partido.FechaHora</td>
+    </tr>
+    <tr>
+        <th scope="col">Marcador</th>
+        <td>@Model.partido.Marcador</td>
+    </tr>
+    <tr>
+        <th scope="col">Arbitro</th>
+        <td>@Model.partido.Arbitro</td>
+    </tr>
+    <tr>
+        <th scope="col">EquipoLocal</th>
+        <td>@Model.partido.EquipoLocal</td>
+    </tr>
+    <tr>
+        <th scope="col">EquipoVisitante</th>
+        <td>@Model.partido.EquipoVisitante</td>
+    </tr>
+    <tr>
+        <th scope="col">Estadio</th>
+        <td>@Model.partido.Estadio</td> 
+    </tr>             
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

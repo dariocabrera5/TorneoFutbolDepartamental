@@ -2,3 +2,47 @@
 @model TorneoFutbolDepartamental.App.Frontend.pages.Equipos.DetailsModel
 @{
 }
+<h1>Detalles Del Equipo</h1>
+<table class="table table-dark">
+    <tr>
+        <th scope="col">Nombre</th>
+        <td>@Model.equipo.Nombre</td>
+    </tr>
+    <tr>
+        <th scope="col">Cnt_PartidosEmpatados</th>
+        <td>@Model.equipo.Cnt_PartidosEmpatados</td>
+    </tr>
+    <tr>
+        <th scope="col">Cnt_PartidosGanados</th>
+        <td>@Model.equipo.Cnt_PartidosGanados</td>
+    </tr>
+    <tr>
+        <th scope="col">Cnt_PartidosJugados</th>
+        <td>@Model.equipo.Cnt_PartidosJugados</td>
+    </tr>
+    <tr>
+        <th scope="col">GolesContra</th>
+        <td>@Model.equipo.GolesContra</td>
+    </tr>
+    <tr>
+        <th scope="col">GolesFavor</th>
+        <td>@Model.equipo.GolesFavor</td>
+    </tr>
+    <tr>
+        <th scope="col">Puntos</th>
+        <td>@Model.equipo.Puntos</td>
+    </tr>
+    <tr>
+        <th scope="col">Jugador</th>
+        <td>@Model.equipo.Jugador</td>
+    </tr>
+    <tr>
+        <th scope="col">DirectorTecnico</th>
+        <td>@Model.equipo.DirectorTecnico</td>
+    </tr>
+    <tr>
+        <th scope="col">Municipio</th>
+        <td>@Model.equipo.Municipio</td>
+    </tr>            
+</table>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>
