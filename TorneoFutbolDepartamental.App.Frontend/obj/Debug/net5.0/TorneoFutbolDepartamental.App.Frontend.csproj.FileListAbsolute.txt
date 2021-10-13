@@ -151,8 +151,6 @@ C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Fronte
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Details.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Index.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Details.cshtml.g.cs
-C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Index.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Details.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Index.cshtml.g.cs
