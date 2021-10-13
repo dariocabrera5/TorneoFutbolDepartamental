@@ -19,134 +19,14 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Equipo", b =>
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Arbitro", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ArbitroId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("DirectorTecnicoId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("GolesContra")
-                        .HasColumnType("int");
-
-                    b.Property<int>("GolesFavor")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Puntos")
-                        .HasColumnType("int");
-
-                    b.Property<int>("cntPartidosEmpatados")
-                        .HasColumnType("int");
-
-                    b.Property<int>("cntPartidosGanados")
-                        .HasColumnType("int");
-
-                    b.Property<int>("cntPartidosJugados")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("municipioId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DirectorTecnicoId");
-
-                    b.HasIndex("municipioId");
-
-                    b.ToTable("Equipos");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Estadio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Direccion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("MunicipioId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MunicipioId");
-
-                    b.ToTable("Estadios");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Municipio", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Nombre")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Municipios");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Partido", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int?>("ArbitroId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("EquipoLocalId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("EquipoVisitanteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("EstadioId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("FechaHora")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("marcador")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ArbitroId");
-
-                    b.HasIndex("EquipoLocalId");
-
-                    b.HasIndex("EquipoVisitanteId");
-
-                    b.HasIndex("EstadioId");
-
-                    b.ToTable("Partidos");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Persona", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
+                    b.Property<string>("ColegioPertenece")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Documento")
@@ -158,39 +38,124 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                     b.Property<string>("Telefono")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("ArbitroId");
 
-                    b.ToTable("Personas");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Arbitro", b =>
-                {
-                    b.HasBaseType("TorneoFutbolDepartamental.App.Dominio.Persona");
-
-                    b.Property<string>("ColegioPertenece")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasDiscriminator().HasValue("Arbitro");
+                    b.ToTable("Arbitros");
                 });
 
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.DirectorTecnico", b =>
                 {
-                    b.HasBaseType("TorneoFutbolDepartamental.App.Dominio.Persona");
+                    b.Property<int>("DirectorTecnicoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Documento")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Equipo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("DirectorTecnico");
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Telefono")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("DirectorTecnicoId");
+
+                    b.ToTable("DirectoresTecnicos");
+                });
+
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Equipo", b =>
+                {
+                    b.Property<int>("EquipoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Cnt_PartidosEmpatados")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cnt_PartidosGanados")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cnt_PartidosJugados")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("DirectorTecnicoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GolesContra")
+                        .HasColumnType("int");
+
+                    b.Property<int>("GolesFavor")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("JugadorId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("MunicipioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Puntos")
+                        .HasColumnType("int");
+
+                    b.HasKey("EquipoId");
+
+                    b.HasIndex("DirectorTecnicoId");
+
+                    b.HasIndex("JugadorId");
+
+                    b.HasIndex("MunicipioId");
+
+                    b.ToTable("Equipos");
+                });
+
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Estadio", b =>
+                {
+                    b.Property<int>("EstadioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Ciudad")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Direccion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("MunicipioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("EstadioId");
+
+                    b.HasIndex("MunicipioId");
+
+                    b.ToTable("Estadios");
                 });
 
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Jugador", b =>
                 {
-                    b.HasBaseType("TorneoFutbolDepartamental.App.Dominio.Persona");
+                    b.Property<int>("JugadorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
-                    b.Property<int?>("EquipoId")
-                        .HasColumnType("int");
+                    b.Property<string>("Documento")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Equipo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Numero")
                         .HasColumnType("int");
@@ -198,9 +163,65 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                     b.Property<string>("Posicion")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasIndex("EquipoId");
+                    b.Property<string>("Telefono")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasDiscriminator().HasValue("Jugador");
+                    b.HasKey("JugadorId");
+
+                    b.ToTable("Jugadores");
+                });
+
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Municipio", b =>
+                {
+                    b.Property<int>("MunicipioId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MunicipioId");
+
+                    b.ToTable("Municipios");
+                });
+
+            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Partido", b =>
+                {
+                    b.Property<int>("PartidoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("ArbitroId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EquipoLocalEquipoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EquipoVisitanteEquipoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("EstadioId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FechaHora")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Marcador")
+                        .HasColumnType("int");
+
+                    b.HasKey("PartidoId");
+
+                    b.HasIndex("ArbitroId");
+
+                    b.HasIndex("EquipoLocalEquipoId");
+
+                    b.HasIndex("EquipoVisitanteEquipoId");
+
+                    b.HasIndex("EstadioId");
+
+                    b.ToTable("Partidos");
                 });
 
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Equipo", b =>
@@ -209,13 +230,19 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("DirectorTecnicoId");
 
-                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.Municipio", "municipio")
+                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.Jugador", "Jugador")
                         .WithMany()
-                        .HasForeignKey("municipioId");
+                        .HasForeignKey("JugadorId");
+
+                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.Municipio", "Municipio")
+                        .WithMany()
+                        .HasForeignKey("MunicipioId");
 
                     b.Navigation("DirectorTecnico");
 
-                    b.Navigation("municipio");
+                    b.Navigation("Jugador");
+
+                    b.Navigation("Municipio");
                 });
 
             modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Estadio", b =>
@@ -235,11 +262,11 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
 
                     b.HasOne("TorneoFutbolDepartamental.App.Dominio.Equipo", "EquipoLocal")
                         .WithMany()
-                        .HasForeignKey("EquipoLocalId");
+                        .HasForeignKey("EquipoLocalEquipoId");
 
                     b.HasOne("TorneoFutbolDepartamental.App.Dominio.Equipo", "EquipoVisitante")
                         .WithMany()
-                        .HasForeignKey("EquipoVisitanteId");
+                        .HasForeignKey("EquipoVisitanteEquipoId");
 
                     b.HasOne("TorneoFutbolDepartamental.App.Dominio.Estadio", "Estadio")
                         .WithMany()
@@ -252,15 +279,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia.Migrations
                     b.Navigation("EquipoVisitante");
 
                     b.Navigation("Estadio");
-                });
-
-            modelBuilder.Entity("TorneoFutbolDepartamental.App.Dominio.Jugador", b =>
-                {
-                    b.HasOne("TorneoFutbolDepartamental.App.Dominio.Equipo", "Equipo")
-                        .WithMany()
-                        .HasForeignKey("EquipoId");
-
-                    b.Navigation("Equipo");
                 });
 #pragma warning restore 612, 618
         }

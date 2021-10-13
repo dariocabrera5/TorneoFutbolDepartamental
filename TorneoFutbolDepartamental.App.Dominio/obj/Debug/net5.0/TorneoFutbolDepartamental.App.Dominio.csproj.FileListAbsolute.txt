@@ -15,3 +15,15 @@ C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Domini
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.dll
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Dominio.dll
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.pdb
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.deps.json
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.dll
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\bin\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Dominio.dll
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\bin\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.pdb
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.AssemblyInfo.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.dll
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Dominio.dll
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Dominio\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Dominio.pdb
