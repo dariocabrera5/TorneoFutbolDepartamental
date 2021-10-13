@@ -60,34 +60,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             }
             return EstadioEncontrado;
         }
-        IEnumerable<Estadio> IRepositorioEstadio.GetAllEstadios()
-        {   
-            return _appContext.Estadios;
-        }
-         public void DeleteEstadio(int idEstadio)
-        {
-            var EstadioEncontrado = _appContext.Estadios.Find(idEstadio);
-            if (EstadioEncontrado == null)
-                return;
-            _appContext.Estadios.Remove(EstadioEncontrado);
-            _appContext.SaveChanges();
-        }
-        public Estadio GetEstadio(int idEstadio)
-        {
-            return _appContext.Estadios.Find(idEstadio);
-        }
-        public Estadio UpdateEstadio(Estadio estadio)
-        {
-            var EstadioEncontrado = _appContext.Estadios.Find(estadio.Id);
-            if (EstadioEncontrado != null)
-            {
-                EstadioEncontrado.Nombre = estadio.Nombre;
-                EstadioEncontrado.Direccion = estadio.Direccion;
-                EstadioEncontrado.Municipio = estadio.Municipio;
-                _appContext.SaveChanges();
-            }
-            return EstadioEncontrado;
-        }
 
     }
 }
