@@ -29,9 +29,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         {
             return _appContext.Estadios.Find(idEstadio);
         }
-        /*public Estadio UpdateEstadio(Estadio estadio)
+        public Estadio UpdateEstadio(Estadio estadio)
         {
-            var EstadioEncontrado = _appContext.Estadios.Find(Estadio.Id);
+            var EstadioEncontrado = _appContext.Estadios.Find(estadio.Id);
             if (EstadioEncontrado != null)
             {
                 EstadioEncontrado.Nombre = estadio.Nombre;
@@ -40,7 +40,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 _appContext.SaveChanges();
             }
             return EstadioEncontrado;
-        }*/
+        }
 
     }
 }

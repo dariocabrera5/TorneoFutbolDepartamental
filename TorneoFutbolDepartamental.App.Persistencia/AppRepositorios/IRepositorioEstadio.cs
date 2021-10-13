@@ -8,6 +8,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         IEnumerable<Estadio> GetAllEstadios(); 
         void DeleteEstadio(int idEstadio);
         public Estadio GetEstadio(int idEstadio);
+        Estadio UpdateEstadio(Estadio estadioActualizado);
         //public Estadio UpdateEstadio(Estadio estadio);
 
     }
