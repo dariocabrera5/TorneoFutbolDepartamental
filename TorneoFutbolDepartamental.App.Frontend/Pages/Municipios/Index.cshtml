@@ -15,8 +15,12 @@
         {
             <tr>
                 <td>@municipio.Nombre</td>
-                <td><a class="btn btn-primary" asp-page="./Details" asp-route-Municipioid="@municipio.MunicipioId">Detalles</a></td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-Municipioid="@municipio.MunicipioId">Detalles</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-Municipioid="@municipio.MunicipioId">Editar</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+<a class="btn btn-primary" asp-page="./Create">Nuevo Municipio</a>

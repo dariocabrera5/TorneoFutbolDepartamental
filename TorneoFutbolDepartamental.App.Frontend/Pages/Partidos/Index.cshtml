@@ -25,8 +25,12 @@
                 <td>@partido.EquipoLocal</td>
                 <td>@partido.EquipoVisitante</td>
                 <td>@partido.Estadio</td>
-                <td><a class="btn btn-primary" asp-page="./Details" asp-route-Partidoid="@partido.PartidoId">Detalles</a></td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-Partidoid="@partido.PartidoId">Detalles</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-Partidoid="@partido.PartidoId">Editar</a>
+                </td>
             </tr>
         }
     </tbody>
 </table>
+<a class="btn btn-primary" asp-page="./Create">Nuevo Partido</a>

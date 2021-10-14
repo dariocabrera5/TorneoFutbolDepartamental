@@ -84,3 +84,17 @@ C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\Torne
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Index.cshtml.g.cs
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Details.cshtml.g.cs
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Index.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Create.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Estadios\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Edit.cshtml.g.cs
+C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Edit.cshtml.g.cs

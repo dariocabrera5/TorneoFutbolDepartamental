@@ -1,0 +1,48 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Equipos.EditModel
+@{
+}
+<h1>Editar Equipo</h1>
+<form method="post">
+    <div>
+        <label asp-for="equipo.EquipoId"></label>
+        <input asp-for="equipo.EquipoId"class="form-control" readonly>
+    </div>
+    <div>
+        <label asp-for="equipo.Nombre"></label>
+        <input asp-for="equipo.Nombre"class="form-control">
+        <span asp-validation-for="equipo.Nombre" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.Cnt_PartidosEmpatados"></label>
+        <input asp-for="equipo.Cnt_PartidosEmpatados"class="form-control">
+        <span asp-validation-for="equipo.Cnt_PartidosEmpatados" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.Cnt_PartidosGanados"></label>
+        <input asp-for="equipo.Cnt_PartidosGanados"class="form-control">
+        <span asp-validation-for="equipo.Cnt_PartidosGanados" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.Cnt_PartidosJugados"></label>
+        <input asp-for="equipo.Cnt_PartidosJugados"class="form-control">
+        <span asp-validation-for="equipo.Cnt_PartidosJugados" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.GolesContra"></label>
+        <input asp-for="equipo.GolesContra"class="form-control">
+        <span asp-validation-for="equipo.GolesContra" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.GolesFavor"></label>
+        <input asp-for="equipo.GolesFavor"class="form-control">
+        <span asp-validation-for="equipo.GolesFavor" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="equipo.Puntos"></label>
+        <input asp-for="equipo.Puntos"class="form-control">
+        <span asp-validation-for="equipo.Puntos" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar Equipo</button>
+</form>
+<p><a class="btn btn-primary" asp-page="./Index">Volver</a></p>

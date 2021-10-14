@@ -1,0 +1,18 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Municipios.EditModel
+@{
+}
+<h1>Editar Municipio</h1>
+<form method="post">
+    <div>
+        <label asp-for="municipio.MunicipioId"></label>
+        <input asp-for="municipio.MunicipioId"class="form-control" readonly>
+    </div>
+    <div>
+        <label asp-for="municipio.Nombre"></label>
+        <input asp-for="municipio.Nombre"class="form-control">
+        <span asp-validation-for="municipio.Nombre" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar Municipio</button>
+</form>
+<p><a class="btn btn-primary" asp-page="./Index">Volver</a></p>

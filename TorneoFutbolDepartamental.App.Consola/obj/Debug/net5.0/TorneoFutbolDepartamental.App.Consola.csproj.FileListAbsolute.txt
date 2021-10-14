@@ -129,7 +129,6 @@ C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\Torne
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.AssemblyInfo.cs
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.csproj.CoreCompileInputs.cache
-C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.csproj.CopyComplete
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.dll
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\ref\TorneoFutbolDepartamental.App.Consola.dll
 C:\Users\user\Desktop\ESTEBAN\Trabajos\Ciclo 3\Proyectos net core\Proyecto\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Consola\obj\Debug\net5.0\TorneoFutbolDepartamental.App.Consola.pdb
