@@ -18,13 +18,44 @@ namespace TorneoFutbolDepartamental.App.Persistencia
             _appContext=appContext;
         }
 
+        DirectorTecnico IRepositorioEquipo.AsignarDirectorTecnico(int Equipoid, int DirectorTecnicoid)
+        {
+            var equipoEncontrado = _appContext.Equipos.Find(Equipoid);
+            if(equipoEncontrado != null)
+            {
+                var directorTecnicoEncontrado = _appContext.DirectoresTecnicos.Find(DirectorTecnicoid);
+                if(directorTecnicoEncontrado != null)
+                {
+                    equipoEncontrado.DirectorTecnico = directorTecnicoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return directorTecnicoEncontrado;
+            }
+            return null;
+        }
+
+        Municipio IRepositorioEquipo.AsignarMunicipio(int Equipoid, int Municipioid)
+        {
+            var equipoEncontrado = _appContext.Equipos.Find(Equipoid);
+            if(equipoEncontrado != null)
+            {
+                var municipioEncontrado = _appContext.Municipios.Find(Municipioid);
+                if(municipioEncontrado != null)
+                {
+                    equipoEncontrado.Municipio = municipioEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return municipioEncontrado;
+            }
+            return null;
+        }
+
         Equipo IRepositorioEquipo.AddEquipo (Equipo equipo)
         {
             var EquipoAñadido = _appContext.Equipos.Add(equipo);
             _appContext.SaveChanges();
             return EquipoAñadido.Entity;
         }
-        
         void IRepositorioEquipo.DeleteEquipo (int Equipoid)
         {
             var EquipoEncontrado = _appContext.Equipos.FirstOrDefault(e => e.EquipoId == Equipoid);
@@ -32,7 +63,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 return;
             _appContext.Equipos.Remove(EquipoEncontrado);
             _appContext.SaveChanges();
-
         }
 
         IEnumerable<Equipo> IRepositorioEquipo.GetAllEquipos ()
@@ -42,7 +72,8 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
         Equipo IRepositorioEquipo.GetEquipo (int Equipoid)
         {
-            return _appContext.Equipos.FirstOrDefault(e => e.EquipoId == Equipoid);
+            var equipo = _appContext.Equipos.Where(e => e.EquipoId == Equipoid).Include(e => e.DirectorTecnico).Include(e => e.Municipio).FirstOrDefault();
+            return equipo;
         }
 
         Equipo IRepositorioEquipo.UpdateEquipo (Equipo equipo)
@@ -62,7 +93,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 EquipoEncontrado.Municipio = equipo.Municipio;
 
                 _appContext.SaveChanges();
-                
             }
             return EquipoEncontrado;
         }

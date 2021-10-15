@@ -14,5 +14,9 @@ namespace TorneoFutbolDepartamental.App.Persistencia
          void DeleteEquipo(int Equipoid);
 
          Equipo GetEquipo(int Equipoid);
+
+         DirectorTecnico AsignarDirectorTecnico(int Equipoid,int DirectorTecnicoid);
+
+         Municipio AsignarMunicipio(int Equipoid,int Municipioid);
     }
 }

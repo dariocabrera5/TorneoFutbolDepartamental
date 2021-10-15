@@ -38,11 +38,29 @@
     </tr>
     <tr>
         <th scope="col">DirectorTecnico</th>
-        <td>@Model.equipo.DirectorTecnico</td>
+        @if (Model.equipo.DirectorTecnico == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddDirectorTecnico" asp-route-Equipoid="@Model.equipo.EquipoId">Asignar DirectorTecnico</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.equipo.DirectorTecnico.Nombre</td>
+        }
     </tr>
     <tr>
         <th scope="col">Municipio</th>
-        <td>@Model.equipo.Municipio</td>
-    </tr>            
+        @if (Model.equipo.Municipio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddMunicipio" asp-route-Equipoid="@Model.equipo.EquipoId">Asignar Municipio</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.equipo.Municipio.Nombre</td>
+        }
+    </tr>           
 </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>
