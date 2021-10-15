@@ -3,6 +3,7 @@
 @{
 }
 <h1>Listado de Estadios</h1>
+<td><a class="btn btn-primary" asp-page="./Create">Crear Estadio</a></td>
 <table class="table">
     <thead>
         <tr>
@@ -22,6 +23,7 @@
                 <td>@estadio.Ciudad</td>
                 <td>@estadio.Municipio</td>
                 <td><a class="btn btn-primary" asp-page="./Details" asp-route-Estadioid="@estadio.EstadioId">Detalles</a></td>
+                <td><a class="btn btn-primary" asp-page="./Edit">Editar</a></td>
             </tr>
         }
     </tbody>
