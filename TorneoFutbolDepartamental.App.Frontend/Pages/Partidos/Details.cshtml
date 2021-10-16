@@ -14,19 +14,55 @@
     </tr>
     <tr>
         <th scope="col">Arbitro</th>
-        <td>@Model.partido.Arbitro</td>
+        @if (Model.partido.Arbitro == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddArbitro" asp-route-Partidoid="@Model.partido.PartidoId">Asignar Arbitro</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.Arbitro.Nombre</td>
+        }
     </tr>
     <tr>
-        <th scope="col">EquipoLocal</th>
-        <td>@Model.partido.EquipoLocal</td>
+        <th scope="col">Equipo Local</th>
+        @if (Model.partido.EquipoLocal == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEquipoLocal" asp-route-Partidoid="@Model.partido.PartidoId">Asignar Equipo Local</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.EquipoLocal.Nombre</td>
+        }
     </tr>
     <tr>
-        <th scope="col">EquipoVisitante</th>
-        <td>@Model.partido.EquipoVisitante</td>
+        <th scope="col">Equipo Visitante</th>
+        @if (Model.partido.EquipoVisitante == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEquipoVisitante" asp-route-Partidoid="@Model.partido.PartidoId">Asignar Equipo Visitante</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.EquipoVisitante.Nombre</td>
+        }
     </tr>
     <tr>
         <th scope="col">Estadio</th>
-        <td>@Model.partido.Estadio</td> 
+        @if (Model.partido.Estadio == null)
+        {
+            <td>
+                <a class="btn btn-primary" asp-page="./AddEstadio" asp-route-Partidoid="@Model.partido.PartidoId">Asignar Estadio</a>
+            </td>
+        }
+        else
+        {
+            <td>@Model.partido.Estadio.Nombre</td>
+        }
     </tr>             
 </table>
 <a class="btn btn-primary" asp-page="./Index">Volver</a>

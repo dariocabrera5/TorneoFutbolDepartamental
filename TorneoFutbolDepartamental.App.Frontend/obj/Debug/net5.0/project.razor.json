@@ -15619,6 +15619,11 @@
   "RootNamespace": "TorneoFutbolDepartamental.App.Frontend",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Estadios\\AddMunicipio.cshtml",
+      "TargetPath": "Pages\\Estadios\\AddMunicipio.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15626,6 +15631,11 @@
     {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Estadios\\Index.cshtml",
       "TargetPath": "Pages\\Estadios\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\DirectoresTecnicos\\Create.cshtml",
+      "TargetPath": "Pages\\DirectoresTecnicos\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15649,6 +15659,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\AddEquipoLocal.cshtml",
+      "TargetPath": "Pages\\Partidos\\AddEquipoLocal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Estadios\\Create.cshtml",
+      "TargetPath": "Pages\\Estadios\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -15656,6 +15676,11 @@
     {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Equipos\\AddMunicipio.cshtml",
+      "TargetPath": "Pages\\Equipos\\AddMunicipio.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15669,8 +15694,33 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Estadios\\Edit.cshtml",
+      "TargetPath": "Pages\\Estadios\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Municipios\\Edit.cshtml",
+      "TargetPath": "Pages\\Municipios\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Arbitros\\Create.cshtml",
+      "TargetPath": "Pages\\Arbitros\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Equipos\\Create.cshtml",
+      "TargetPath": "Pages\\Equipos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Jugadores\\Edit.cshtml",
+      "TargetPath": "Pages\\Jugadores\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15679,8 +15729,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Equipos\\AddDirectorTecnico.cshtml",
+      "TargetPath": "Pages\\Equipos\\AddDirectorTecnico.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Municipios\\Details.cshtml",
       "TargetPath": "Pages\\Municipios\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Municipios\\Create.cshtml",
+      "TargetPath": "Pages\\Municipios\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\AddEstadio.cshtml",
+      "TargetPath": "Pages\\Partidos\\AddEstadio.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15699,6 +15764,21 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\Create.cshtml",
+      "TargetPath": "Pages\\Partidos\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\AddArbitro.cshtml",
+      "TargetPath": "Pages\\Partidos\\AddArbitro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\Edit.cshtml",
+      "TargetPath": "Pages\\Partidos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Equipos\\Details.cshtml",
       "TargetPath": "Pages\\Equipos\\Details.cshtml",
       "FileKind": "mvc"
@@ -15709,13 +15789,38 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\DirectoresTecnicos\\Edit.cshtml",
+      "TargetPath": "Pages\\DirectoresTecnicos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Municipios\\Index.cshtml",
       "TargetPath": "Pages\\Municipios\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Partidos\\AddEquipoVisitante.cshtml",
+      "TargetPath": "Pages\\Partidos\\AddEquipoVisitante.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Equipos\\Edit.cshtml",
+      "TargetPath": "Pages\\Equipos\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Estadios\\Details.cshtml",
       "TargetPath": "Pages\\Estadios\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Jugadores\\Create.cshtml",
+      "TargetPath": "Pages\\Jugadores\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\user\\Desktop\\ESTEBAN\\Trabajos\\Ciclo 3\\Proyectos net core\\Proyecto\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Frontend\\Pages\\Arbitros\\Edit.cshtml",
+      "TargetPath": "Pages\\Arbitros\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {

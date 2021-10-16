@@ -18,7 +18,7 @@ namespace TorneoFutbolDepartamental.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            ObtenerArbitros();
+            //ObtenerArbitros();
             //CrearDirectorTecnico();
             //CrearEquipo();
             //CrearEstadio();
@@ -27,6 +27,7 @@ namespace TorneoFutbolDepartamental.App.Consola
             //CrearPartido();
             //BorrarMunicipio();
             //CrearArbitro();
+            BorrarEquipo();
         }
 
         private static void CrearArbitro(){
@@ -101,6 +102,10 @@ namespace TorneoFutbolDepartamental.App.Consola
 
         private static void BorrarMunicipio(){
             _repoMunicipio.DeleteMunicipio(1);
+        }
+
+        private static void BorrarEquipo(){
+            _repoEquipo.DeleteEquipo(3);
         }
 
         private static void ObtenerArbitros(){

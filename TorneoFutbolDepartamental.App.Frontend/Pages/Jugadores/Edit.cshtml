@@ -1,0 +1,43 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Jugadores.EditModel
+@{
+}
+<h1>Editar Jugador</h1>
+<form method="post">
+    <div>
+        <label asp-for="jugador.JugadorId"></label>
+        <input asp-for="jugador.JugadorId"class="form-control" readonly>
+    </div>
+    <div>
+        <label asp-for="jugador.Nombre"></label>
+        <input asp-for="jugador.Nombre"class="form-control">
+        <span asp-validation-for="jugador.Nombre" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="jugador.Documento"></label>
+        <input asp-for="jugador.Documento"class="form-control">
+        <span asp-validation-for="jugador.Documento" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="jugador.Telefono"></label>
+        <input asp-for="jugador.Telefono"class="form-control">
+        <span asp-validation-for="jugador.Telefono" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="jugador.Numero"></label>
+        <input asp-for="jugador.Numero"class="form-control">
+        <span asp-validation-for="jugador.Numero" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="jugador.Posicion"></label>
+        <input asp-for="jugador.Posicion"class="form-control">
+        <span asp-validation-for="jugador.Posicion" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="jugador.Equipo"></label>
+        <input asp-for="jugador.Equipo"class="form-control">
+        <span asp-validation-for="jugador.Equipo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar Jugador</button>
+</form>
+<p><a class="btn btn-primary" asp-page="./Index">Volver</a></p>

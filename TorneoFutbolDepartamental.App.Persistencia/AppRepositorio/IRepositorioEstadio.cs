@@ -14,5 +14,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         void DeleteEstadio(int Estadioid);
 
         Estadio GetEstadio(int Estadioid);
+
+        Municipio AsignarMunicipio(int Estadioid,int Municipioid);
     }
 }

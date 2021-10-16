@@ -42,7 +42,8 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
         Estadio IRepositorioEstadio.GetEstadio (int Estadioid)
         {
-            return _appContext.Estadios.FirstOrDefault(es => es.EstadioId == Estadioid);
+            var estadio = _appContext.Estadios.Where(es => es.EstadioId == Estadioid).Include(es => es.Municipio).FirstOrDefault();
+            return estadio;
         }
 
         Estadio IRepositorioEstadio.UpdateEstadio (Estadio estadio)
@@ -56,9 +57,24 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 EstadioEncontrado.Municipio = estadio.Municipio;
 
                 _appContext.SaveChanges();
-                
             }
             return EstadioEncontrado;
+        }
+
+        Municipio IRepositorioEstadio.AsignarMunicipio(int Estadioid, int Municipioid)
+        {
+            var estadioEncontrado = _appContext.Estadios.Find(Estadioid);
+            if(estadioEncontrado != null)
+            {
+                var municipioEncontrado = _appContext.Municipios.Find(Municipioid);
+                if(municipioEncontrado != null)
+                {
+                    estadioEncontrado.Municipio = municipioEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return municipioEncontrado;
+            }
+            return null;
         }
     }
 }

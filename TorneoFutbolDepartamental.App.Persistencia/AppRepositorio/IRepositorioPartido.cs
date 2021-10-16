@@ -14,5 +14,13 @@ namespace TorneoFutbolDepartamental.App.Persistencia
         void DeletePartido(int Partidoid);
 
         Partido GetPartido(int Partidoid);
+
+        Arbitro AsignarArbitro(int Partidoid, int Arbitroid);
+
+        Equipo AsignarEquipoLocal(int Partidoid, int Equipoid);
+
+        Equipo AsignarEquipoVisitante(int Partidoid, int Equipoid);
+
+        Estadio AsignarEstadio(int Partidoid, int Estadioid);
     }
 }

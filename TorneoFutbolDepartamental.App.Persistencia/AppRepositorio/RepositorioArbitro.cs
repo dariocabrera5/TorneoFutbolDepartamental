@@ -45,7 +45,7 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
         Arbitro IRepositorioArbitro.UpdateArbitro (Arbitro arbitro)
         {
-            var ArbitroEncontrado = _appContext.Arbitros.FirstOrDefault(j => j.ArbitroId == arbitro.ArbitroId);
+            var ArbitroEncontrado = _appContext.Arbitros.FirstOrDefault(a => a.ArbitroId == arbitro.ArbitroId);
             if (ArbitroEncontrado != null)
             {
                 ArbitroEncontrado.Nombre = arbitro.Nombre;
