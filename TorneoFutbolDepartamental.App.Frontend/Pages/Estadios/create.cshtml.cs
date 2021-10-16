@@ -25,6 +25,9 @@ namespace TorneoFutbolDepartamental.App.Frontend.Pages.Estadios
 
         public IActionResult OnPost(Estadio estadio)
         {
+            if(!ModelState.IsValid){
+                return Page();
+            }
             _repoEstadio.AddEstadio(estadio);
             return RedirectToPage("Index");
         }

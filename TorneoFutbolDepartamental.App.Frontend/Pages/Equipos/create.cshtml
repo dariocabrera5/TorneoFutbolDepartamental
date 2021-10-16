@@ -1,0 +1,55 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.pages.Eqipos.createModel
+@{
+}
+<h1>Nuevo Equipo</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="equipo.Nombre">Nombre</label>
+        <input asp-for="equipo.Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="equipo.Cnt_PartidosEmpatados">Cantidad de Partidos Empatados</label>
+        <input asp-for="equipo.Cnt_PartidosEmpatados" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="equipo.Cnt_PartidosGanados">Cantidad de Partidos Ganados</label>
+        <input asp-for="equipo.Cnt_PartidosGanados" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="equipo.Cnt_PartidosJugados">Cantidad de Partidos Jugados</label>
+        <input asp-for="equipo.Cnt_PartidosJugados" class="form-control">
+    </div>
+         <div class="form-group">
+        <label asp-for="equipo.GolesFavor">Goles a Favor</label>
+        <input asp-for="equipo.GolesFavor" class="form-control">
+    </div>
+         <div class="form-group">
+        <label asp-for="equipo.GolesContra">Goles en contra</label>
+        <input asp-for="equipo.GolesContra" class="form-control">
+    </div>
+         <div class="form-group">
+        <label asp-for="equipo.Puntos">Puntos</label>
+        <input asp-for="equipo.Puntos" class="form-control">
+    </div>
+    <!--<div class="form-group">
+        <label for="DirectorTecnicoId">Director Tecnico</label>
+        <select id="DirectorTecnicoId" name="DirectorTecnicoId" class="form-control">
+            foreach (var directortecnico in Model.directorestecnicos)
+            {
+                <option value="directortecnico.DirectorTecnicoId">directortecnico.Nombre</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="MunicipioId">Municipio</label>
+        <select id="MunicipioId" name="MunicipioId" class="form-control">
+            foreach (var municipio in Model.municipios)
+            {
+                <option value="municipio.MunicipioId">municipio.Nombre</option>
+            }
+        </select>
+    </div>-->
+    <button type="submit" class="btn btn-primary btn-block">Añadir Arbitro</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

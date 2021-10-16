@@ -1,0 +1,17 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.pages.Partidos.createModel
+@{
+}
+<h1>Nuevo Partido</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="partido.FechaHora"></label>
+        <input asp-for="partido.FechaHora" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.Marcador"></label>
+        <input asp-for="partido.Marcador" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Crear partido</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

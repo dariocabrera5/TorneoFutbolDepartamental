@@ -1,0 +1,25 @@
+﻿@page
+@model TorneoFutbol.App.Frontend.pages.Arbitros.createModel
+@{
+}
+<h1>Nuevo Arbitro</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="arbitro.Nombre"></label>
+        <input asp-for="arbitro.Nombre" class="form-control" placeholder="pepito perez">
+    </div>
+    <div class="form-group">
+        <label asp-for="arbitro.Documento"></label>
+        <input asp-for="arbitro.Documento" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.Telefono"></label>
+        <input asp-for="arbitro.Telefono" class="form-control">
+    </div>
+     <div class="form-group">
+        <label asp-for="arbitro.ColegioPertenece"></label>
+        <input asp-for="arbitro.ColegioPertenece" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Añadir Arbitro</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

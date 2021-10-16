@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "B0Uq+ZGKoesENTucKqFf4MxaK/fYSApmTF1OkNQHI4xCawa9w4V9lpK8KbvHL7yr5kmatfTBlLzfUEHR/r8mww==",
+  "dgSpecHash": "9fI3qOo46id27fvwPgxkmPZPELjDBtF8VRLPZeeCgQhRtpN7bWjmfEy7aKU68UeknDY1Rp0hj/zI1yJ7s3e71w==",
   "success": true,
   "projectFilePath": "C:\\ProyectoCiclo3\\TorneoFutbolDepartamental\\TorneoFutbolDepartamental.App.Dominio\\TorneoFutbolDepartamental.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KATERINE CABRERA\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

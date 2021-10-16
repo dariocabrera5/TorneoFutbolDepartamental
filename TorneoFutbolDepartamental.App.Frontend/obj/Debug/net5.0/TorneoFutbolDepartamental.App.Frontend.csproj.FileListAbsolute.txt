@@ -175,3 +175,15 @@ C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Fronte
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\Index.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Details.cshtml.g.cs
 C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\Index.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Arbitros\edit.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\DirectoresTecnicos\edit.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Equipos\edit.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Jugadores\edit.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Municipios\edit.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\create.cshtml.g.cs
+C:\ProyectoCiclo3\TorneoFutbolDepartamental\TorneoFutbolDepartamental.App.Frontend\obj\Debug\net5.0\Razor\Pages\Partidos\edit.cshtml.g.cs
