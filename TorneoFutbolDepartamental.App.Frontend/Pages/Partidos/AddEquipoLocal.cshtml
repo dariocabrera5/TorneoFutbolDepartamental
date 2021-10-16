@@ -1,0 +1,22 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Partidos.AddEquipoLocalModel
+@{
+}
+<h1>Asignar Equipo Local</h1>
+<form method="post">
+    <div class="form-group">
+        <label for="Partidoid">Partido</label>
+        <input type="text" Partidoid="Partidoid" name="Partidoid" class="form-control" value="@Model.partido.PartidoId" readonly>
+    </div>
+    <div class="form-group">
+        <label for="Equipoid">Equipo</label>
+        <select Equipoid="Equipoid" name="Equipoid" class="form-control">
+            @foreach (var equipo in Model.equipos)
+            {
+                <option value="@equipo.EquipoId">@equipo.Nombre</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Asignar Equipo Local</button>
+</form>
+<a class="btn btn-primary" asp-page="./Index">Volver</a>

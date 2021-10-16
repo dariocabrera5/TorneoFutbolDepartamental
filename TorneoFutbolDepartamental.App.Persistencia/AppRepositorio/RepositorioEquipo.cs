@@ -88,9 +88,6 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 EquipoEncontrado.GolesContra = equipo.GolesContra;
                 EquipoEncontrado.GolesFavor = equipo.GolesFavor;
                 EquipoEncontrado.Puntos = equipo.Puntos;
-                EquipoEncontrado.Jugador = equipo.Jugador;
-                EquipoEncontrado.DirectorTecnico = equipo.DirectorTecnico;
-                EquipoEncontrado.Municipio = equipo.Municipio;
 
                 _appContext.SaveChanges();
             }

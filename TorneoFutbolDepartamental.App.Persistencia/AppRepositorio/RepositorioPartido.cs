@@ -42,7 +42,8 @@ namespace TorneoFutbolDepartamental.App.Persistencia
 
         Partido IRepositorioPartido.GetPartido (int Partidoid)
         {
-            return _appContext.Partidos.FirstOrDefault(p => p.PartidoId == Partidoid);
+            var partido = _appContext.Partidos.Where(p => p.PartidoId == Partidoid).Include(p => p.Arbitro).Include(p => p.EquipoLocal).Include(p => p.EquipoVisitante).Include(p => p.Estadio).FirstOrDefault();
+            return partido;
         }
 
         Partido IRepositorioPartido.UpdatePartido (Partido partido)
@@ -58,9 +59,72 @@ namespace TorneoFutbolDepartamental.App.Persistencia
                 PartidoEncontrado.Estadio = partido.Estadio;
 
                 _appContext.SaveChanges();
-                
             }
             return PartidoEncontrado;
+        }
+
+        Arbitro IRepositorioPartido.AsignarArbitro(int Partidoid, int Arbitroid)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(Partidoid);
+            if (partidoEncontrado != null)
+            {
+                var arbitroEncontrado = _appContext.Arbitros.Find(Arbitroid);
+                if (arbitroEncontrado != null)
+                {
+                    partidoEncontrado.Arbitro = arbitroEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return arbitroEncontrado;
+            }
+            return null;
+        }
+
+        Equipo IRepositorioPartido.AsignarEquipoLocal(int Partidoid, int Equipoid)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(Partidoid);
+            if (partidoEncontrado != null)
+            {
+                var equipoEncontrado = _appContext.Equipos.Find(Equipoid);
+                if (equipoEncontrado != null)
+                {
+                    partidoEncontrado.EquipoLocal = equipoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return equipoEncontrado;
+            }
+            return null;
+        }
+
+        Equipo IRepositorioPartido.AsignarEquipoVisitante(int Partidoid, int Equipoid)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(Partidoid);
+            if (partidoEncontrado != null)
+            {
+                var equipoEncontrado = _appContext.Equipos.Find(Equipoid);
+                if (equipoEncontrado != null)
+                {
+                    partidoEncontrado.EquipoVisitante = equipoEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return equipoEncontrado;
+            }
+            return null;
+        }
+
+        Estadio IRepositorioPartido.AsignarEstadio(int Partidoid, int Estadioid)
+        {
+            var partidoEncontrado = _appContext.Partidos.Find(Partidoid);
+            if (partidoEncontrado != null)
+            {
+                var estadioEncontrado = _appContext.Estadios.Find(Estadioid);
+                if (estadioEncontrado != null)
+                {
+                    partidoEncontrado.Estadio = estadioEncontrado;
+                    _appContext.SaveChanges();
+                }
+                return estadioEncontrado;
+            }
+            return null;
         }
     }
 }
