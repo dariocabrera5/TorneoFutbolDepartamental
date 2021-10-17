@@ -1,0 +1,23 @@
+﻿@page
+@model TorneoFutbolDepartamental.App.Frontend.Pages.Partidos.EditModel
+@{
+}
+<h1>Editar Partido</h1>
+<form method="post">
+    <div>
+        <label asp-for="partido.PartidoId"></label>
+        <input asp-for="partido.PartidoId"class="form-control" readonly>
+    </div>
+    <div>
+        <label asp-for="partido.FechaHora"></label>
+        <input asp-for="partido.FechaHora"class="form-control">
+        <span asp-validation-for="partido.FechaHora" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="partido.Marcador"></label>
+        <input asp-for="partido.Marcador"class="form-control">
+        <span asp-validation-for="partido.Marcador" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Actualizar Partido</button>
+</form>
+<p><a class="btn btn-primary" asp-page="./Index">Volver</a></p>
